@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Resource Scanner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="vertical-tabs">
+      <h2>Tabs</h2>
+      <div id="tab-list"></div>
+      <button id="scan-selected">Scan Selected Tab</button>
+      <button id="scan-all">Scan All Tabs</button>
+    </aside>
+    <main class="horizontal-content">
+      <div class="controls">
+        <h3 id="scanned-summary">Results</h3>
+        <label>Filter: <input type="text" id="filter-input" placeholder="keyword…"/></label>
+      </div>
+      <div id="results"></div>
+    </main>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
