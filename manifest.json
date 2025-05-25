@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Endpoint Scanner",
+  "name": "Endpoint Js",
   "version": "1.0",
   "permissions": ["tabs", "scripting"],
   "action": {
