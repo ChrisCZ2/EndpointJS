@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Endpoint Scanner</title>
+  <style>
+    body.light {
+      background: white;
+      color: black;
+    }
+
+    body.dark {
+      background: #1e1e1e;
+      color: white;
+    }
+
+    body.dark select,
+    body.dark input,
+    body.dark button {
+      background: #2c2c2c;
+      color: white;
+      border: 1px solid #555;
+    }
+
+    body {
+      width: 400px;
+      height: 350px;
+      margin: 0;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    #results {
+      max-height: 180px;
+      overflow-y: auto;
+      padding: 5px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+
+    #controls {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body class="light">
+  <div id="controls">
+    <label for="tabSelector">Select Tab:</label>
+    <select id="tabSelector"></select>
+
+    <label for="filter">Keyword Filter:</label>
+    <input type="text" id="filter" placeholder="Enter keyword...">
+
+    <button id="scanBtn">Scan</button>
+
+    <label>
+      <input type="checkbox" id="themeToggle"> Dark Mode
+    </label>
+  </div>
+
+  <div id="results"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

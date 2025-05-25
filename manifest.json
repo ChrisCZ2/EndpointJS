@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Endpoint Scanner",
+  "version": "1.0",
+  "permissions": ["tabs", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"]
+}
